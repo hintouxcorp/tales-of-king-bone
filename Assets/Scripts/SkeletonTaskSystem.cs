@@ -14,8 +14,11 @@ public class SkeletonTaskSystem : MonoBehaviour
                 float production =
                     sk.GetProductionPerSecond() * Time.deltaTime;
 
+                ResourceType producedResource =
+                    TaskResourceMap.GetResource(sk.currentTask);
+
                 ResourceManager.Instance
-                    .AddResource(sk.currentTask, production);
+                    .AddResource(producedResource, production);
             }
         }
     }

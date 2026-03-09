@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ManaSystem.cs" />
+    <Compile Include="Assets\Scripts\ResourceTypes.cs" />
     <Compile Include="Assets\Scripts\SkeletonListUI.cs" />
     <Compile Include="Assets\Scripts\Managers\SkeletonManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
     <Compile Include="Assets\Scripts\SkeletonDetailsUI.cs" />
     <Compile Include="Assets\Scripts\TaskType.cs" />
+    <Compile Include="Assets\Scripts\TaskResourceMap.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

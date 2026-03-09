@@ -1,28 +1,31 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class ResourceManager : MonoBehaviour
 {
     public static ResourceManager Instance;
 
-    public float wood;
-    public float stone;
+    private Dictionary<ResourceType, float> resources =
+        new Dictionary<ResourceType, float>();
 
     void Awake()
     {
         Instance = this;
+
+        // inicializa todos os recursos com 0
+        foreach (ResourceType type in System.Enum.GetValues(typeof(ResourceType)))
+        {
+            resources[type] = 0f;
+        }
     }
 
-    public void AddResource(TaskType task, float amount)
+    public void AddResource(ResourceType type, float amount)
     {
-        switch (task)
-        {
-            case TaskType.GatherWood:
-                wood += amount;
-                break;
+        resources[type] += amount;
+    }
 
-            case TaskType.GatherStone:
-                stone += amount;
-                break;
-        }
+    public float GetResource(ResourceType type)
+    {
+        return resources[type];
     }
 }
