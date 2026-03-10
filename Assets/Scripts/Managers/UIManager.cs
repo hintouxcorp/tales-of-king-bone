@@ -33,6 +33,6 @@ public class UIManager : MonoBehaviour
 
     void UpdateSkeletonText()
     {
-        //skeletonText.text = "Caveiras: " + skeletonManager.skeletonCount;
+        skeletonText.text = "Caveiras: " + skeletonManager.skeletons.Count;
     }
 }

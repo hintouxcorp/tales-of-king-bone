@@ -11,6 +11,7 @@ public class SkeletonTaskSystem : MonoBehaviour
             if (sk.state == SkeletonState.Working &&
                 sk.currentTask != TaskType.None)
             {
+                Debug.Log("Skeleton trabalhando: " + sk.currentTask);
                 float production =
                     sk.GetProductionPerSecond() * Time.deltaTime;
 
