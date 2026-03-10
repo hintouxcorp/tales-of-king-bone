@@ -51,8 +51,10 @@
     <Compile Include="Assets\Scripts\ManaSystem.cs" />
     <Compile Include="Assets\Scripts\ResourceTypes.cs" />
     <Compile Include="Assets\Scripts\SkeletonListUI.cs" />
+    <Compile Include="Assets\Scripts\TaskButton.cs" />
     <Compile Include="Assets\Scripts\Managers\SkeletonManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+    <Compile Include="Assets\Scripts\OccupationPanel.cs" />
     <Compile Include="Assets\Scripts\SkeletonState.cs" />
     <Compile Include="Assets\Scripts\SkeletonData.cs" />
     <Compile Include="Assets\Scripts\SkeletonTaskSystem.cs" />
