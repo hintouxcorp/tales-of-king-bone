@@ -50,6 +50,10 @@ public class OccupationPanel : MonoBehaviour
         ClearButtons();
 
         CreateButton(TaskType.GatherWood, "Wood");
+        CreateButton(TaskType.GatherWood, "Leaf");
+        CreateButton(TaskType.GatherWood, "Fiber");
+        CreateButton(TaskType.GatherWood, "Sisal");
+        CreateButton(TaskType.GatherWood, "Water");
     }
 
     public void ShowMining()
