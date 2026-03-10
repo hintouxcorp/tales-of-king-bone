@@ -25,4 +25,9 @@ public class SkeletonListItem : MonoBehaviour
     {
         skeletonManager.RemoveSkeleton(skeletonData.id);
     }
+
+    public void OnClickJob()
+    {
+        OccupationPanel.Instance.OpenPanel(skeletonData);
+    }
 }
